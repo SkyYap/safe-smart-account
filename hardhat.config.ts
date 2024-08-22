@@ -116,6 +116,11 @@ const userConfig: HardhatUserConfig = {
             ...sharedNetworkConfig,
             url: `https://api.avax.network/ext/bc/C/rpc`,
         },
+        bscTestnet: {
+            ...sharedNetworkConfig,
+            url: `https://bsc-testnet.infura.io/v3/426afbfc127c4181a9e92b13e9232e90`,
+            chainId: 97,
+        },
     },
     deterministicDeployment,
     namedAccounts: {
